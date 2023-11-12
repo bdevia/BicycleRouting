@@ -47,3 +47,4 @@ SET peso = (
 );
 
 --psql -U postgres -h localhost -d gis
+--sudo chown -R benja:sudo ./db/13/main
