@@ -46,5 +46,6 @@ SET peso = (
     ), 0)
 );
 
+--COMANDOS PARA TENERLOS A MANO
 --psql -U postgres -h localhost -d gis
 --sudo chown -R benja:sudo ./db/13/main
