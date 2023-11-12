@@ -1,8 +1,10 @@
+-- LIMPIEZA DE TABLA ACCIDENTES
 ALTER TABLE IF EXISTS accidentes
 DROP COLUMN IF EXISTS fid,
 DROP COLUMN IF EXISTS comuna,
 DROP COLUMN IF EXISTS año;
 
+--LIMPIEZA DE TABLAR ROBOS
 ALTER TABLE IF EXISTS robos
 DROP COLUMN IF EXISTS fid,
 DROP COLUMN IF EXISTS id,
@@ -13,11 +15,8 @@ DROP COLUMN IF EXISTS nivel_robo,
 DROP COLUMN IF EXISTS nivel_rf,
 DROP COLUMN IF EXISTS nivel_rv;
 
-CREATE TABLE ciclovias AS 
+--EXTRAEMOS SOLO DATA DE INTERES PARA LAS CICLOVIAS
+CREATE TABLE IF NOT EXISTS ciclovias AS 
 SELECT ciclovia_id, geom, eje, inicio, fin, sentido
 FROM "ciclovias_all" WHERE region = 'Metropolitana' AND estado = 'Existentes';
 DROP TABLE IF EXISTS "ciclovias_all";
-
-
-
-
