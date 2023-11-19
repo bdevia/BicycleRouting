@@ -17,6 +17,6 @@ DROP COLUMN IF EXISTS nivel_rv;
 
 --EXTRAEMOS SOLO DATA DE INTERES PARA LAS CICLOVIAS
 CREATE TABLE IF NOT EXISTS ciclovias AS 
-SELECT ciclovia_id, geom, eje, inicio, fin, sentido
+SELECT ciclovia_id, geom, sentido
 FROM "ciclovias_all" WHERE region = 'Metropolitana' AND estado = 'Existentes';
 DROP TABLE IF EXISTS "ciclovias_all";
