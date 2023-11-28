@@ -7,11 +7,12 @@ networks:
 services:
   postgis:
     container_name: 'postgis_container'
-    image: kartoza/postgis:13.0
+    image: pgrouting/pgrouting:12-3.0-3.0.1
     networks:
       - my_network
     volumes:
-      - ./db/:/var/lib/postgresql
+      - ./scripts/db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./scripts/db/:/db/
     env_file:
       - ./.env
     ports:
