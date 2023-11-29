@@ -1,10 +1,11 @@
-import geopandas as gpd
+from collections import OrderedDict
 
-# Especifica la ruta al archivo shapefile
-ruta_shapefile = '../metadata/ciclovias/Ciclovías_2Semestre_2022_snc.shp'
+coordinates = [[1, 2, 3], [3, 4, 5], [1, 2, 3], [5, 6, 7], [3, 4, 5]]
 
-# Lee el shapefile usando geopandas
-datos_shapefile = gpd.read_file(ruta_shapefile)
+# Convertir listas internas a tuplas y eliminar duplicados manteniendo el orden
+unique_coordinates = list(OrderedDict.fromkeys(map(tuple, coordinates)))
 
-# Muestra la información del GeoDataFrame
-print(datos_shapefile.head())
+# Convertir nuevamente las tuplas a listas
+new_coordinates = [list(coord) for coord in unique_coordinates]
+
+print(new_coordinates)
