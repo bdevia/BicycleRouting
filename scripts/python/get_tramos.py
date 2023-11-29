@@ -207,7 +207,7 @@ for i, feature in enumerate(ciclovias['features']):
                 puntos_id[tuple(tramo[-1])] = id_destino
             multilinestring = {
                 "type": "Feature",
-                "properties": {"tramo_id": id_tramos, "ciclovia_id": target_ciclovia_id, "tramo": i+1, "sentido": sentido, "id_origen": id_origen, "id_destino": id_destino},
+                "properties": {"ciclovia_id": target_ciclovia_id, "tramo": i+1, "sentido": sentido, "source": id_origen, "target": id_destino},
                 "geometry": {
                     "type": "MultiLineString",
                     "coordinates": [tramo]
@@ -217,7 +217,7 @@ for i, feature in enumerate(ciclovias['features']):
             if sentido == "S_I" or sentido == "Bidireccional":
                 multilinestring = {
                     "type": "Feature",
-                    "properties": {"tramo_id": id_tramos, "ciclovia_id": target_ciclovia_id, "tramo": i+1, "sentido": sentido, "id_origen": id_destino, "id_destino": id_origen},
+                    "properties": {"ciclovia_id": target_ciclovia_id, "tramo": i+1, "sentido": sentido, "source": id_destino, "target": id_origen},
                     "geometry": {
                         "type": "MultiLineString",
                         "coordinates": [tramo[::-1]]
@@ -236,5 +236,31 @@ output_geojson = {
 # Escribir el nuevo GeoJSON al archivo de salida
 with open(output_file_path, "w") as outfile:
     geojson.dump(output_geojson, outfile, indent=2)
+    
+puntos_features = []
 
-print(f"Archivo GeoJSON generado con éxito en: {output_file_path}")
+# Iterar sobre los puntos y crear características para cada punto
+for punto, id_nodo in puntos_id.items():
+    punto_feature = {
+        "type": "Feature",
+        "properties": {"source": id_nodo},
+        "geometry": {
+            "type": "Point",
+            "coordinates": punto
+        }
+    }
+    puntos_features.append(punto_feature)
+
+# Crear el GeoJSON para los puntos
+puntos_geojson = {
+    "type": "FeatureCollection",
+    "name": "Puntos_nodos",
+    "features": puntos_features
+}
+
+# Escribir el nuevo GeoJSON de puntos al archivo de salida
+puntos_output_file_path = "./metadata/ciclovias/nodos.geojson"  # Ruta de salida para el GeoJSON de puntos
+with open(puntos_output_file_path, "w") as puntos_outfile:
+    geojson.dump(puntos_geojson, puntos_outfile, indent=2)
+
+print(f"Archivos GeoJSON generados con éxito en: /metadata/ciclovias")
