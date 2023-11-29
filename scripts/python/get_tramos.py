@@ -2,6 +2,7 @@ import json
 import geojson
 import bisect
 import math
+from collections import OrderedDict
 
 # FUNCION PARA GENERAR LOS TRAMOS DE CICLOVIAS
 def split_list(lst, indices):
@@ -15,7 +16,7 @@ def split_list(lst, indices):
             #print(f'start {start} fin {end}')
             start = indice
     result.append(lst[start:])
-    #print(f'start {start}')
+    #print(f'start {start} end {len(lst)-1}')
     return result
     
 def distancia_entre_puntos(punto1, punto2):
@@ -125,6 +126,7 @@ target_ciclovia = [1112, 1137, 1334, 1335]
 #target_ciclovia_id_example = 1112
 features = []
 puntos_id = {}
+id_tramos = 1
 
 for index, feature in enumerate(ciclovias['features']):
     ciclovias['features'][index]["geometry"]["coordinates"] = concatenar(feature["geometry"]["coordinates"])
@@ -147,7 +149,9 @@ for i, feature in enumerate(ciclovias['features']):
             puntos_interseccion.append(geometry_intersecciones['coordinates'])
             id_intersecciones.append(feature['properties']['ciclovia_b'])
     
-    new_coordinates = coordinates
+    # Convertir listas internas a tuplas y eliminar duplicados manteniendo el orden
+    unique_coordinates = list(OrderedDict.fromkeys(map(tuple, coordinates)))
+    new_coordinates = [list(coord) for coord in unique_coordinates]
     
     for i, feature_b in enumerate(ciclovias['features']):
         if feature_b['properties']['ciclovia_id'] != target_ciclovia_id and target_ciclovia_id not in id_intersecciones:
@@ -203,13 +207,24 @@ for i, feature in enumerate(ciclovias['features']):
                 puntos_id[tuple(tramo[-1])] = id_destino
             multilinestring = {
                 "type": "Feature",
-                "properties": {"ciclovia_id": target_ciclovia_id, "sentido": sentido,"tramo": i+1, "id_origen": id_origen, "id_destino": id_destino},
+                "properties": {"tramo_id": id_tramos, "ciclovia_id": target_ciclovia_id, "tramo": i+1, "sentido": sentido, "id_origen": id_origen, "id_destino": id_destino},
                 "geometry": {
                     "type": "MultiLineString",
                     "coordinates": [tramo]
                 }
             }
             features.append(multilinestring)
+            if sentido == "S_I" or sentido == "Bidireccional":
+                multilinestring = {
+                    "type": "Feature",
+                    "properties": {"tramo_id": id_tramos, "ciclovia_id": target_ciclovia_id, "tramo": i+1, "sentido": sentido, "id_origen": id_destino, "id_destino": id_origen},
+                    "geometry": {
+                        "type": "MultiLineString",
+                        "coordinates": [tramo]
+                    }
+                }
+                features.append(multilinestring)
+            id_tramos = id_tramos + 1
 
 # Crear el GeoJSON final
 output_geojson = {

@@ -8,14 +8,14 @@ ogr2ogr -f PostgreSQL PG:"host=$HOST user=$POSTGRES_USER password=$POSTGRES_PASS
 ogr2ogr -f PostgreSQL PG:"host=$HOST user=$POSTGRES_USER password=$POSTGRES_PASSWORD dbname=$POSTGRES_DB port=$PORT" ./metadata/robos/robos_rm_40m.geojson -lco PRECISION=NO -nlt MULTIPOLYGON -nln robos -lco GEOMETRY_NAME=geom -lco FID=robo_id -dim 2 
 PGPASSWORD=$POSTGRES_PASSWORD psql -h $HOST -U $POSTGRES_USER -d $POSTGRES_DB -p $PORT -f ./scripts/db/clear_data.sql
 
-echo "Iniciando procesamiento de ciclovias..."
+echo "Iniciando procesamiento de tramos ciclovias..."
 PGPASSWORD=$POSTGRES_PASSWORD psql -h $HOST -U $POSTGRES_USER -d $POSTGRES_DB -p $PORT -f ./scripts/db/get_intersecciones.sql
 ogr2ogr -f GeoJSON -t_srs EPSG:4326 ./data/ciclovias/ciclovias.geojson PG:"host=$HOST user=$POSTGRES_USER password=$POSTGRES_PASSWORD dbname=$POSTGRES_DB port=$PORT" -sql "SELECT * FROM ciclovias"
 ogr2ogr -f GeoJSON -t_srs EPSG:4326 ./data/ciclovias/puntos_intersecciones.geojson PG:"host=$HOST user=$POSTGRES_USER password=$POSTGRES_PASSWORD dbname=$POSTGRES_DB port=$PORT" -sql "SELECT * FROM puntos_intersecciones"
 python3 scripts/python/get_tramos.py 
-ogr2ogr -f PostgreSQL PG:"host=$HOST user=$POSTGRES_USER password=$POSTGRES_PASSWORD dbname=$POSTGRES_DB port=$PORT" ./metadata/ciclovias/ciclovia_tramos.geojson -lco PRECISION=NO -nlt MULTILINESTRING -nln ciclovia_tramos -lco GEOMETRY_NAME=geom -lco FID=tramo_id -dim 3
+ogr2ogr -f PostgreSQL PG:"host=$HOST user=$POSTGRES_USER password=$POSTGRES_PASSWORD dbname=$POSTGRES_DB port=$PORT" ./metadata/ciclovias/ciclovia_tramos.geojson -lco PRECISION=NO -nlt MULTILINESTRING -nln ciclovia_tramos -lco GEOMETRY_NAME=geom -lco FID=id -dim 3
 
-echo "Asignacion de pesos..."
+echo "Asignacion de pesos por tramos..."
 PGPASSWORD=$POSTGRES_PASSWORD psql -h $HOST -U $POSTGRES_USER -d $POSTGRES_DB -p $PORT -f ./scripts/db/get_pesos.sql
 ogr2ogr -f GeoJSON -t_srs EPSG:4326 ./metadata/ciclovias/ciclovia_tramos_pesos.geojson PG:"host=$HOST user=$POSTGRES_USER password=$POSTGRES_PASSWORD dbname=$POSTGRES_DB port=$PORT" -sql "SELECT * FROM ciclovia_tramos"
 
