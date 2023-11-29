@@ -14,11 +14,14 @@ ogr2ogr -f GeoJSON -t_srs EPSG:4326 ./data/ciclovias/ciclovias.geojson PG:"host=
 ogr2ogr -f GeoJSON -t_srs EPSG:4326 ./data/ciclovias/puntos_intersecciones.geojson PG:"host=$HOST user=$POSTGRES_USER password=$POSTGRES_PASSWORD dbname=$POSTGRES_DB port=$PORT" -sql "SELECT * FROM puntos_intersecciones"
 python3 scripts/python/get_tramos.py 
 ogr2ogr -f PostgreSQL PG:"host=$HOST user=$POSTGRES_USER password=$POSTGRES_PASSWORD dbname=$POSTGRES_DB port=$PORT" ./metadata/ciclovias/ciclovia_tramos.geojson -lco PRECISION=NO -nlt MULTILINESTRING -nln ciclovia_tramos -lco GEOMETRY_NAME=geom -lco FID=id -dim 3
+ogr2ogr -f PostgreSQL PG:"host=$HOST user=$POSTGRES_USER password=$POSTGRES_PASSWORD dbname=$POSTGRES_DB port=$PORT" ./metadata/ciclovias/nodos.geojson -lco PRECISION=NO -nlt POINT -nln nodos -lco GEOMETRY_NAME=geom -lco FID=nodo_id -dim 3
 
 echo "Asignacion de pesos por tramos..."
 PGPASSWORD=$POSTGRES_PASSWORD psql -h $HOST -U $POSTGRES_USER -d $POSTGRES_DB -p $PORT -f ./scripts/db/get_pesos.sql
 ogr2ogr -f GeoJSON -t_srs EPSG:4326 ./metadata/ciclovias/ciclovia_tramos_pesos.geojson PG:"host=$HOST user=$POSTGRES_USER password=$POSTGRES_PASSWORD dbname=$POSTGRES_DB port=$PORT" -sql "SELECT * FROM ciclovia_tramos"
 
+echo "Eliminando tablas auxiliares..."
+PGPASSWORD=$POSTGRES_PASSWORD psql -h $HOST -U $POSTGRES_USER -d $POSTGRES_DB -p $PORT -f ./scripts/db/delete_tables.sql
 
 #ogr2ogr -f PostgreSQL PG:"host=localhost user=postgres password=postgres dbname=gis port=25432" ./metadata/accidentes/accidentes.geojson -lco PRECISION=NO -nlt POLYGON -nln accidentes -lco GEOMETRY_NAME=geom -lco FID=accidente_id
 #ogr2ogr -f PostgreSQL PG:"host=localhost user=postgres password=postgres dbname=gis port=25432" ./metadata/robos/robos_rm_40m.geojson -lco PRECISION=NO -nlt MULTIPOLYGON -nln robos -lco GEOMETRY_NAME=geom -lco FID=robo_id -dim 2 
