@@ -220,7 +220,7 @@ for i, feature in enumerate(ciclovias['features']):
                     "properties": {"tramo_id": id_tramos, "ciclovia_id": target_ciclovia_id, "tramo": i+1, "sentido": sentido, "id_origen": id_destino, "id_destino": id_origen},
                     "geometry": {
                         "type": "MultiLineString",
-                        "coordinates": [tramo]
+                        "coordinates": [tramo[::-1]]
                     }
                 }
                 features.append(multilinestring)
