@@ -1,9 +1,9 @@
 import sys
 import psycopg2
-import os
 import json
 
 def ejecutar_consulta(source, target, option):
+    # Configura los detalles de la conexión a PostgreSQL
     conn_params = {
         'dbname': 'gis',
         'user': 'postgres',
@@ -11,6 +11,8 @@ def ejecutar_consulta(source, target, option):
         'host': 'localhost',
         'port': '25432'
     }
+
+    # Intenta conectarse a la base de datos
     try:
         conn = psycopg2.connect(**conn_params)
         cursor = conn.cursor()
@@ -30,21 +32,29 @@ def ejecutar_consulta(source, target, option):
             print("Opción no válida. Debes proporcionar el modo de ejecucion ('default' o 'secure' ")
             return None
 
-        
+        features = []
         # Ejecuta las consultas y obtén los resultados
         cursor.execute(consulta_1)
         resultados_1 = cursor.fetchall()
+        #print(resultados_1)
+        features.append(guardar_resultados_geojson(resultados_1))
         
         cursor.execute(consulta_2)
         resultados_2 = cursor.fetchall()
+        #print(resultados_2)
+        features.append(guardar_resultados_geojson(resultados_2))
         
         cursor.execute(consulta_3)
         resultados_3 = cursor.fetchall()
+        #print(resultados_3)
+        features.append(guardar_resultados_geojson(resultados_3))
         
         cursor.execute(consulta_4)
         resultados_4 = cursor.fetchall()
+        #print(resultados_4)
+        features.append(guardar_resultados_geojson(resultados_4))
 
-        return resultados_1, resultados_2, resultados_3, resultados_4
+        return features
 
     except psycopg2.Error as e:
         print(f"Error de PostgreSQL: {e}")
@@ -54,9 +64,12 @@ def ejecutar_consulta(source, target, option):
         # Cierra la conexión
         if conn:
             conn.close()
-            
-def filtrar_features_por_ids(features, ids):
-    return [feature for feature in features if feature['properties']['id'] in ids]
+
+def guardar_resultados_geojson(resultados):
+    features = []
+
+    
+    return features
 
 
 if __name__ == "__main__":
@@ -66,38 +79,9 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # Obtiene los argumentos de la línea de comandos
+    features = []
     source = sys.argv[1]
     target = sys.argv[2]
     option = sys.argv[3]
 
-    input_file_path = '../../metadata/ciclovias/ciclovia_tramos_pesos.geojson'
-    directorio_salida = '../../data/rutas'
-    
-    # Leer el archivo GeoJSON de entrada
-    with open(input_file_path, "r") as infile:
-        ciclovias_tramos = json.load(infile)
-        
-    resultados_1, resultados_2, resultados_3, resultados_4 = ejecutar_consulta(source, target, option)
 
-    for i, resultados in enumerate([resultados_1, resultados_2, resultados_3, resultados_4], start=1):
-        if resultados:
-            # Convertir los IDs a una lista de enteros
-            ids_enteros = [id_[0] for id_ in resultados]
-
-            # Filtrar las características por los IDs obtenidos
-            features_resultantes = filtrar_features_por_ids(ciclovias_tramos['features'], ids_enteros)
-
-            # Crear un nuevo GeoJSON con las características resultantes
-            resultado_geojson = {
-                "type": "FeatureCollection",
-                "features": features_resultantes
-            }
-
-            # Escribir el resultado a un nuevo archivo GeoJSON
-            nombre_archivo = os.path.join(directorio_salida, f"ruta_{i}.geojson")
-            with open(nombre_archivo, "w") as outfile:
-                json.dump(resultado_geojson, outfile, indent=2)
-
-            print(f"Se ha creado el archivo {nombre_archivo} con la ruta {i} .")
-        else:
-            print(f"No se obtuvieron IDs de la consulta {i}.")
