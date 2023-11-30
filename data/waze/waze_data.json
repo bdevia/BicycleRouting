@@ -1,0 +1,1147 @@
+{
+    "alerts": [
+        {
+            "alert_confidence": 5,
+            "alert_id": "226935031",
+            "alert_reliability": 10,
+            "city": "Santiago",
+            "comments": [],
+            "country": "CI",
+            "description": "Trabajos",
+            "image": null,
+            "latitude": -33.432091,
+            "longitude": -70.662141,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 13,
+            "publish_datetime_utc": "2023-11-06T21:42:07.000Z",
+            "reported_by": "Gasparfox",
+            "street": "Guardiamarina Ernesto Riquelme",
+            "subtype": "ROAD_CLOSED_EVENT",
+            "type": "ROAD_CLOSED"
+        },
+        {
+            "alert_confidence": 0,
+            "alert_id": "251215431",
+            "alert_reliability": 6,
+            "city": "Santiago",
+            "comments": [],
+            "country": "CI",
+            "description": "cuidado andan tres motos robando \ud83d\udd2b",
+            "image": null,
+            "latitude": -33.447722,
+            "longitude": -70.635731,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 1,
+            "publish_datetime_utc": "2023-11-30T00:51:08.000Z",
+            "reported_by": null,
+            "street": "Portugal",
+            "subtype": null,
+            "type": "CHIT_CHAT"
+        },
+        {
+            "alert_confidence": 2,
+            "alert_id": "251209706",
+            "alert_reliability": 10,
+            "city": "Santiago",
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.456688,
+            "longitude": -70.660829,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 5,
+            "publish_datetime_utc": "2023-11-30T00:49:46.000Z",
+            "reported_by": "Daffuz",
+            "street": "Av. Almirante Blanco Encalada",
+            "subtype": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+            "type": "HAZARD"
+        },
+        {
+            "alert_confidence": 1,
+            "alert_id": "251188095",
+            "alert_reliability": 10,
+            "city": "Santiago",
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.439234,
+            "longitude": -70.669073,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 4,
+            "publish_datetime_utc": "2023-11-30T00:45:26.000Z",
+            "reported_by": null,
+            "street": "Catedral",
+            "subtype": null,
+            "type": "POLICE"
+        },
+        {
+            "alert_confidence": 3,
+            "alert_id": "251052802",
+            "alert_reliability": 10,
+            "city": "Estaci\u00f3n Central",
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.45415,
+            "longitude": -70.684959,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 8,
+            "publish_datetime_utc": "2023-11-30T00:19:38.000Z",
+            "reported_by": null,
+            "street": "Obispo Javier V\u00e1squez",
+            "subtype": "POLICE_VISIBLE",
+            "type": "POLICE"
+        },
+        {
+            "alert_confidence": 5,
+            "alert_id": "251117852",
+            "alert_reliability": 10,
+            "city": null,
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.458621,
+            "longitude": -70.676799,
+            "near_by": "Santiago",
+            "num_comments": 0,
+            "num_thumbs_up": 32,
+            "publish_datetime_utc": "2023-11-30T00:32:06.000Z",
+            "reported_by": "world_5w59b6iu",
+            "street": "T\u00fanel a Arica / General Vel\u00e1squez / 5 de Abril",
+            "subtype": "HAZARD_ON_ROAD",
+            "type": "HAZARD"
+        },
+        {
+            "alert_confidence": 0,
+            "alert_id": "251163445",
+            "alert_reliability": 5,
+            "city": "Santiago",
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.442194,
+            "longitude": -70.674205,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 0,
+            "publish_datetime_utc": "2023-11-30T00:40:55.000Z",
+            "reported_by": null,
+            "street": "Hu\u00e9rfanos",
+            "subtype": "POLICE_VISIBLE",
+            "type": "POLICE"
+        },
+        {
+            "alert_confidence": 5,
+            "alert_id": "251003292",
+            "alert_reliability": 10,
+            "city": "Santiago",
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.448238,
+            "longitude": -70.653476,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 11,
+            "publish_datetime_utc": "2023-11-30T00:10:37.000Z",
+            "reported_by": null,
+            "street": "Nataniel Cox",
+            "subtype": "HAZARD_ON_ROAD_CONSTRUCTION",
+            "type": "HAZARD"
+        },
+        {
+            "alert_confidence": 5,
+            "alert_id": "251034364",
+            "alert_reliability": 10,
+            "city": null,
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.41899,
+            "longitude": -70.690797,
+            "near_by": "Quinta Normal",
+            "num_comments": 0,
+            "num_thumbs_up": 31,
+            "publish_datetime_utc": "2023-11-30T00:16:01.000Z",
+            "reported_by": "CsarZapataPeaceful4",
+            "street": "Autopista Central - Eje Gral. Vel\u00e1zquez",
+            "subtype": "HAZARD_ON_SHOULDER_CAR_STOPPED",
+            "type": "HAZARD"
+        },
+        {
+            "alert_confidence": 2,
+            "alert_id": "251095284",
+            "alert_reliability": 10,
+            "city": null,
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.45872,
+            "longitude": -70.67838,
+            "near_by": "Santiago",
+            "num_comments": 0,
+            "num_thumbs_up": 5,
+            "publish_datetime_utc": "2023-11-30T00:27:23.000Z",
+            "reported_by": null,
+            "street": "T\u00fanel a Arica / General Vel\u00e1squez / 5 de Abril",
+            "subtype": "HAZARD_ON_ROAD_OBJECT",
+            "type": "HAZARD"
+        },
+        {
+            "alert_confidence": 2,
+            "alert_id": "251240473",
+            "alert_reliability": 9,
+            "city": null,
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.423028,
+            "longitude": -70.673679,
+            "near_by": "Renca",
+            "num_comments": 0,
+            "num_thumbs_up": 4,
+            "publish_datetime_utc": "2023-11-30T00:55:53.000Z",
+            "reported_by": "ToyotaAsFck",
+            "street": "Autopista Central",
+            "subtype": "HAZARD_ON_ROAD_CAR_STOPPED",
+            "type": "HAZARD"
+        },
+        {
+            "alert_confidence": 0,
+            "alert_id": "251124380",
+            "alert_reliability": 5,
+            "city": "Santiago",
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.452437,
+            "longitude": -70.659059,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 0,
+            "publish_datetime_utc": "2023-11-30T00:32:57.000Z",
+            "reported_by": "DaphneRamosNinja",
+            "street": "Av. Manuel Rodr\u00edguez",
+            "subtype": "JAM_STAND_STILL_TRAFFIC",
+            "type": "JAM"
+        },
+        {
+            "alert_confidence": 0,
+            "alert_id": "88551817",
+            "alert_reliability": 6,
+            "city": "Independencia",
+            "comments": [],
+            "country": "CI",
+            "description": "Trabajos",
+            "image": null,
+            "latitude": -33.420086,
+            "longitude": -70.66965,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 0,
+            "publish_datetime_utc": "2023-11-16T21:51:00.000Z",
+            "reported_by": "Gasparfox",
+            "street": "Av. Salom\u00f3n Sack",
+            "subtype": "ROAD_CLOSED_EVENT",
+            "type": "ROAD_CLOSED"
+        },
+        {
+            "alert_confidence": 0,
+            "alert_id": "88552712",
+            "alert_reliability": 6,
+            "city": "Independencia",
+            "comments": [],
+            "country": "CI",
+            "description": "Trabajos",
+            "image": null,
+            "latitude": -33.420903,
+            "longitude": -70.667745,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 0,
+            "publish_datetime_utc": "2023-11-16T21:51:00.000Z",
+            "reported_by": "Gasparfox",
+            "street": "Av. Salom\u00f3n Sack",
+            "subtype": "ROAD_CLOSED_EVENT",
+            "type": "ROAD_CLOSED"
+        },
+        {
+            "alert_confidence": 0,
+            "alert_id": "88554568",
+            "alert_reliability": 6,
+            "city": "Independencia",
+            "comments": [],
+            "country": "CI",
+            "description": "Trabajos",
+            "image": null,
+            "latitude": -33.419817,
+            "longitude": -70.670239,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 0,
+            "publish_datetime_utc": "2023-11-16T21:51:00.000Z",
+            "reported_by": "Gasparfox",
+            "street": "Av. Salom\u00f3n Sack",
+            "subtype": "ROAD_CLOSED_EVENT",
+            "type": "ROAD_CLOSED"
+        },
+        {
+            "alert_confidence": 0,
+            "alert_id": "251229420",
+            "alert_reliability": 5,
+            "city": "Santiago",
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.442587,
+            "longitude": -70.645722,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 0,
+            "publish_datetime_utc": "2023-11-30T00:53:49.000Z",
+            "reported_by": "Irvingidrp",
+            "street": "Av. Libertador Bernardo O'Higgins",
+            "subtype": "JAM_STAND_STILL_TRAFFIC",
+            "type": "JAM"
+        },
+        {
+            "alert_confidence": 2,
+            "alert_id": "251140334",
+            "alert_reliability": 9,
+            "city": "Estaci\u00f3n Central",
+            "comments": [],
+            "country": "CI",
+            "description": "pila andan 3 pendiente de un beta.. como ro.ban.do .. cierren los vidrios !!! *** sin oficio",
+            "image": null,
+            "latitude": -33.454428,
+            "longitude": -70.687278,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 3,
+            "publish_datetime_utc": "2023-11-30T00:36:18.000Z",
+            "reported_by": "Paccoto",
+            "street": "Ruiz Tagle",
+            "subtype": null,
+            "type": "CHIT_CHAT"
+        },
+        {
+            "alert_confidence": 5,
+            "alert_id": "251032151",
+            "alert_reliability": 10,
+            "city": "Santiago",
+            "comments": [],
+            "country": "CI",
+            "description": "se me quedaron las luces prendidas quien me auxilia con carga de bater\u00eda porfa kia morning",
+            "image": null,
+            "latitude": -33.459631,
+            "longitude": -70.648867,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 5,
+            "publish_datetime_utc": "2023-11-30T00:15:59.000Z",
+            "reported_by": null,
+            "street": "Av. Manuel Antonio Matta",
+            "subtype": null,
+            "type": "CHIT_CHAT"
+        },
+        {
+            "alert_confidence": 4,
+            "alert_id": "251112121",
+            "alert_reliability": 10,
+            "city": "Santiago",
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.459916,
+            "longitude": -70.657721,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 9,
+            "publish_datetime_utc": "2023-11-30T00:30:52.000Z",
+            "reported_by": "PaCojeloViejo",
+            "street": "El Parque",
+            "subtype": "HAZARD_WEATHER_FLOOD",
+            "type": "HAZARD"
+        },
+        {
+            "alert_confidence": 5,
+            "alert_id": "250909743",
+            "alert_reliability": 10,
+            "city": "Quinta Normal",
+            "comments": [],
+            "country": "CI",
+            "description": null,
+            "image": null,
+            "latitude": -33.43179,
+            "longitude": -70.692176,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 41,
+            "publish_datetime_utc": "2023-11-29T23:54:04.000Z",
+            "reported_by": "KernMafia",
+            "street": "Av. Mapocho",
+            "subtype": "HAZARD_ON_ROAD_CONSTRUCTION",
+            "type": "HAZARD"
+        },
+        {
+            "alert_confidence": 5,
+            "alert_id": "226848917",
+            "alert_reliability": 10,
+            "city": "Providencia",
+            "comments": [],
+            "country": "CI",
+            "description": "Trabajos",
+            "image": null,
+            "latitude": -33.437236,
+            "longitude": -70.634222,
+            "near_by": null,
+            "num_comments": 0,
+            "num_thumbs_up": 26,
+            "publish_datetime_utc": "2023-11-06T21:29:02.000Z",
+            "reported_by": "Gasparfox",
+            "street": "Retorno al Centro",
+            "subtype": "ROAD_CLOSED_EVENT",
+            "type": "ROAD_CLOSED"
+        }
+    ],
+    "jams": [
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "Santiago",
+            "country": "CI",
+            "delay_seconds": 110,
+            "end_location": null,
+            "jam_id": "1173271118",
+            "length_meters": 172,
+            "level": 2,
+            "line_coordinates": [
+                {
+                    "lat": -33.457243,
+                    "lon": -70.651546
+                },
+                {
+                    "lat": -33.4557,
+                    "lon": -70.651769
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:52:08.281Z",
+            "severity": 5,
+            "speed_kmh": 3.69,
+            "start_location": null,
+            "street": "Alejandro I",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:37.555Z"
+        },
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "Santiago",
+            "country": "CI",
+            "delay_seconds": 69,
+            "end_location": null,
+            "jam_id": "1173726964",
+            "length_meters": 182,
+            "level": 1,
+            "line_coordinates": [
+                {
+                    "lat": -33.451887,
+                    "lon": -70.645482
+                },
+                {
+                    "lat": -33.453512,
+                    "lon": -70.645216
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:57:35.662Z",
+            "severity": 5,
+            "speed_kmh": 4.08,
+            "start_location": null,
+            "street": "Vald\u00e9s",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:35.662Z"
+        },
+        {
+            "block_alert_description": "Trabajos",
+            "block_alert_id": "226935031",
+            "block_alert_type": "ROAD_CLOSED_EVENT",
+            "block_alert_update_datetime_utc": "2023-11-06T21:42:07.508Z",
+            "block_start_datetime_utc": "2023-11-06T21:35:00.000Z",
+            "city": "Santiago",
+            "country": "CI",
+            "delay_seconds": 0,
+            "end_location": null,
+            "jam_id": "1081130866",
+            "length_meters": 138,
+            "level": 5,
+            "line_coordinates": [
+                {
+                    "lat": -33.432091,
+                    "lon": -70.662141
+                },
+                {
+                    "lat": -33.433307,
+                    "lon": -70.661838
+                }
+            ],
+            "publish_datetime_utc": "2023-11-29T13:39:37.226Z",
+            "severity": 5,
+            "speed_kmh": 0,
+            "start_location": null,
+            "street": "Guardiamarina Ernesto Riquelme",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:35.310Z"
+        },
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "\u00d1u\u00f1oa",
+            "country": "CI",
+            "delay_seconds": 156,
+            "end_location": null,
+            "jam_id": "1173482194",
+            "length_meters": 154,
+            "level": 3,
+            "line_coordinates": [
+                {
+                    "lat": -33.451746,
+                    "lon": -70.622165
+                },
+                {
+                    "lat": -33.450401,
+                    "lon": -70.622561
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:54:49.117Z",
+            "severity": 5,
+            "speed_kmh": 2.84,
+            "start_location": null,
+            "street": "Tegualda",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:37.663Z"
+        },
+        {
+            "block_alert_description": "Trabajos",
+            "block_alert_id": "88554568",
+            "block_alert_type": "ROAD_CLOSED_EVENT",
+            "block_alert_update_datetime_utc": "2023-11-16T21:51:00.456Z",
+            "block_start_datetime_utc": "2023-11-16T21:50:00.000Z",
+            "city": "Independencia",
+            "country": "CI",
+            "delay_seconds": 0,
+            "end_location": null,
+            "jam_id": "700570886",
+            "length_meters": 121,
+            "level": 5,
+            "line_coordinates": [
+                {
+                    "lat": -33.419817,
+                    "lon": -70.670239
+                },
+                {
+                    "lat": -33.41931,
+                    "lon": -70.671395
+                }
+            ],
+            "publish_datetime_utc": "2023-11-26T22:57:57.869Z",
+            "severity": 5,
+            "speed_kmh": 0,
+            "start_location": null,
+            "street": "Av. Salom\u00f3n Sack",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:34.040Z"
+        },
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "Santiago",
+            "country": "CI",
+            "delay_seconds": 106,
+            "end_location": null,
+            "jam_id": "1173526874",
+            "length_meters": 616,
+            "level": 3,
+            "line_coordinates": [
+                {
+                    "lat": -33.454517,
+                    "lon": -70.630171
+                },
+                {
+                    "lat": -33.455402,
+                    "lon": -70.629903
+                },
+                {
+                    "lat": -33.455576,
+                    "lon": -70.629844
+                },
+                {
+                    "lat": -33.455771,
+                    "lon": -70.629797
+                },
+                {
+                    "lat": -33.456138,
+                    "lon": -70.629698
+                },
+                {
+                    "lat": -33.457779,
+                    "lon": -70.629246
+                },
+                {
+                    "lat": -33.459925,
+                    "lon": -70.628629
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:54:51.857Z",
+            "severity": 5,
+            "speed_kmh": 12.56,
+            "start_location": null,
+            "street": "Av. Vicu\u00f1a Mackenna",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:37.479Z"
+        },
+        {
+            "block_alert_description": "Trabajos",
+            "block_alert_id": "88551817",
+            "block_alert_type": "ROAD_CLOSED_EVENT",
+            "block_alert_update_datetime_utc": "2023-11-16T21:51:00.376Z",
+            "block_start_datetime_utc": "2023-11-16T21:50:00.000Z",
+            "city": "Independencia",
+            "country": "CI",
+            "delay_seconds": 0,
+            "end_location": null,
+            "jam_id": "210337440",
+            "length_meters": 62,
+            "level": 5,
+            "line_coordinates": [
+                {
+                    "lat": -33.420085,
+                    "lon": -70.66965
+                },
+                {
+                    "lat": -33.419817,
+                    "lon": -70.670239
+                }
+            ],
+            "publish_datetime_utc": "2023-11-23T07:28:45.994Z",
+            "severity": 5,
+            "speed_kmh": 0,
+            "start_location": null,
+            "street": "Av. Salom\u00f3n Sack",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:35.432Z"
+        },
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "\u00d1u\u00f1oa",
+            "country": "CI",
+            "delay_seconds": 155,
+            "end_location": null,
+            "jam_id": "1173107270",
+            "length_meters": 164,
+            "level": 3,
+            "line_coordinates": [
+                {
+                    "lat": -33.455441,
+                    "lon": -70.62188
+                },
+                {
+                    "lat": -33.453968,
+                    "lon": -70.621776
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:50:41.885Z",
+            "severity": 5,
+            "speed_kmh": 2.8,
+            "start_location": null,
+            "street": "Fern\u00e1ndez Concha",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:36.279Z"
+        },
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "Providencia",
+            "country": "CI",
+            "delay_seconds": 87,
+            "end_location": null,
+            "jam_id": "1173178656",
+            "length_meters": 229,
+            "level": 2,
+            "line_coordinates": [
+                {
+                    "lat": -33.419646,
+                    "lon": -70.620607
+                },
+                {
+                    "lat": -33.421,
+                    "lon": -70.618753
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:50:40.249Z",
+            "severity": 5,
+            "speed_kmh": 5.01,
+            "start_location": null,
+            "street": "Los Colonos",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:35.714Z"
+        },
+        {
+            "block_alert_description": "Trabajos",
+            "block_alert_id": "226848917",
+            "block_alert_type": "ROAD_CLOSED_EVENT",
+            "block_alert_update_datetime_utc": "2023-11-06T21:29:02.642Z",
+            "block_start_datetime_utc": "2023-11-06T21:28:00.000Z",
+            "city": "Providencia",
+            "country": "CI",
+            "delay_seconds": 0,
+            "end_location": null,
+            "jam_id": "64833104",
+            "length_meters": 91,
+            "level": 5,
+            "line_coordinates": [
+                {
+                    "lat": -33.437236,
+                    "lon": -70.634222
+                },
+                {
+                    "lat": -33.437164,
+                    "lon": -70.634097
+                },
+                {
+                    "lat": -33.437106,
+                    "lon": -70.634058
+                },
+                {
+                    "lat": -33.437039,
+                    "lon": -70.63403
+                },
+                {
+                    "lat": -33.436968,
+                    "lon": -70.634024
+                },
+                {
+                    "lat": -33.436901,
+                    "lon": -70.634041
+                },
+                {
+                    "lat": -33.436794,
+                    "lon": -70.634104
+                },
+                {
+                    "lat": -33.436718,
+                    "lon": -70.634222
+                },
+                {
+                    "lat": -33.436673,
+                    "lon": -70.634416
+                }
+            ],
+            "publish_datetime_utc": "2023-11-06T21:31:44.119Z",
+            "severity": 5,
+            "speed_kmh": 0,
+            "start_location": null,
+            "street": "Retorno al Centro",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:39.707Z"
+        },
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "Santiago",
+            "country": "CI",
+            "delay_seconds": 83,
+            "end_location": null,
+            "jam_id": "1173619962",
+            "length_meters": 583,
+            "level": 2,
+            "line_coordinates": [
+                {
+                    "lat": -33.450105,
+                    "lon": -70.676435
+                },
+                {
+                    "lat": -33.450288,
+                    "lon": -70.676653
+                },
+                {
+                    "lat": -33.450395,
+                    "lon": -70.67673
+                },
+                {
+                    "lat": -33.450924,
+                    "lon": -70.676635
+                },
+                {
+                    "lat": -33.451808,
+                    "lon": -70.67632
+                },
+                {
+                    "lat": -33.452011,
+                    "lon": -70.676341
+                },
+                {
+                    "lat": -33.452168,
+                    "lon": -70.676384
+                },
+                {
+                    "lat": -33.453102,
+                    "lon": -70.67619
+                },
+                {
+                    "lat": -33.454121,
+                    "lon": -70.675934
+                },
+                {
+                    "lat": -33.455159,
+                    "lon": -70.675683
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:56:11.986Z",
+            "severity": 5,
+            "speed_kmh": 11.81,
+            "start_location": null,
+            "street": "San Alfonso",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:34.750Z"
+        },
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "Santiago",
+            "country": "CI",
+            "delay_seconds": 147,
+            "end_location": null,
+            "jam_id": "1173576604",
+            "length_meters": 322,
+            "level": 3,
+            "line_coordinates": [
+                {
+                    "lat": -33.465293,
+                    "lon": -70.630209
+                },
+                {
+                    "lat": -33.462459,
+                    "lon": -70.630982
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:56:11.310Z",
+            "severity": 5,
+            "speed_kmh": 5.99,
+            "start_location": null,
+            "street": "Padre Orellana",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:34.026Z"
+        },
+        {
+            "block_alert_description": "Trabajos",
+            "block_alert_id": "88550343",
+            "block_alert_type": "ROAD_CLOSED_EVENT",
+            "block_alert_update_datetime_utc": "2023-11-16T21:51:00.165Z",
+            "block_start_datetime_utc": "2023-11-16T21:50:00.000Z",
+            "city": "Independencia",
+            "country": "CI",
+            "delay_seconds": 0,
+            "end_location": null,
+            "jam_id": "659160664",
+            "length_meters": 73,
+            "level": 5,
+            "line_coordinates": [
+                {
+                    "lat": -33.421208,
+                    "lon": -70.667053
+                },
+                {
+                    "lat": -33.420903,
+                    "lon": -70.667745
+                }
+            ],
+            "publish_datetime_utc": "2023-11-26T10:08:43.887Z",
+            "severity": 5,
+            "speed_kmh": 0,
+            "start_location": null,
+            "street": "Av. Salom\u00f3n Sack",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:37.925Z"
+        },
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "Santiago",
+            "country": "CI",
+            "delay_seconds": 106,
+            "end_location": null,
+            "jam_id": "1172466512",
+            "length_meters": 174,
+            "level": 3,
+            "line_coordinates": [
+                {
+                    "lat": -33.45674,
+                    "lon": -70.635255
+                },
+                {
+                    "lat": -33.458264,
+                    "lon": -70.634821
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:43:42.082Z",
+            "severity": 5,
+            "speed_kmh": 4.63,
+            "start_location": null,
+            "street": "Rogelio Ugarte",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:36.232Z"
+        },
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "Estaci\u00f3n Central",
+            "country": "CI",
+            "delay_seconds": 96,
+            "end_location": null,
+            "jam_id": "1173578502",
+            "length_meters": 618,
+            "level": 2,
+            "line_coordinates": [
+                {
+                    "lat": -33.459043,
+                    "lon": -70.687887
+                },
+                {
+                    "lat": -33.457374,
+                    "lon": -70.68796
+                },
+                {
+                    "lat": -33.455878,
+                    "lon": -70.688425
+                },
+                {
+                    "lat": -33.454883,
+                    "lon": -70.688752
+                },
+                {
+                    "lat": -33.453608,
+                    "lon": -70.689171
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:56:10.845Z",
+            "severity": 5,
+            "speed_kmh": 9.48,
+            "start_location": null,
+            "street": "Nicasio Retamales",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:33.568Z"
+        },
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "Quinta Normal",
+            "country": "CI",
+            "delay_seconds": 70,
+            "end_location": null,
+            "jam_id": "1173014962",
+            "length_meters": 539,
+            "level": 2,
+            "line_coordinates": [
+                {
+                    "lat": -33.422907,
+                    "lon": -70.694547
+                },
+                {
+                    "lat": -33.42422,
+                    "lon": -70.69495
+                },
+                {
+                    "lat": -33.425075,
+                    "lon": -70.695186
+                },
+                {
+                    "lat": -33.426203,
+                    "lon": -70.695498
+                },
+                {
+                    "lat": -33.427628,
+                    "lon": -70.695954
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:49:15.441Z",
+            "severity": 5,
+            "speed_kmh": 12.44,
+            "start_location": null,
+            "street": "La Plata",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:33.615Z"
+        },
+        {
+            "block_alert_description": "Trabajos",
+            "block_alert_id": "88552712",
+            "block_alert_type": "ROAD_CLOSED_EVENT",
+            "block_alert_update_datetime_utc": "2023-11-16T21:51:00.293Z",
+            "block_start_datetime_utc": "2023-11-16T21:50:00.000Z",
+            "city": "Independencia",
+            "country": "CI",
+            "delay_seconds": 0,
+            "end_location": null,
+            "jam_id": "608944658",
+            "length_meters": 199,
+            "level": 5,
+            "line_coordinates": [
+                {
+                    "lat": -33.420903,
+                    "lon": -70.667745
+                },
+                {
+                    "lat": -33.420552,
+                    "lon": -70.668541
+                },
+                {
+                    "lat": -33.420159,
+                    "lon": -70.669461
+                },
+                {
+                    "lat": -33.420085,
+                    "lon": -70.66965
+                }
+            ],
+            "publish_datetime_utc": "2023-11-28T07:36:52.149Z",
+            "severity": 5,
+            "speed_kmh": 0,
+            "start_location": null,
+            "street": "Av. Salom\u00f3n Sack",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:38.419Z"
+        },
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "Santiago",
+            "country": "CI",
+            "delay_seconds": 101,
+            "end_location": null,
+            "jam_id": "1173562602",
+            "length_meters": 273,
+            "level": 3,
+            "line_coordinates": [
+                {
+                    "lat": -33.466548,
+                    "lon": -70.67598
+                },
+                {
+                    "lat": -33.466572,
+                    "lon": -70.676607
+                },
+                {
+                    "lat": -33.466576,
+                    "lon": -70.676947
+                },
+                {
+                    "lat": -33.466648,
+                    "lon": -70.678915
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:56:12.530Z",
+            "severity": 5,
+            "speed_kmh": 6.65,
+            "start_location": null,
+            "street": "Antofagasta",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:35.100Z"
+        },
+        {
+            "block_alert_description": null,
+            "block_alert_id": null,
+            "block_alert_type": null,
+            "block_alert_update_datetime_utc": null,
+            "block_start_datetime_utc": null,
+            "city": "Santiago",
+            "country": "CI",
+            "delay_seconds": 100,
+            "end_location": null,
+            "jam_id": "1173333362",
+            "length_meters": 531,
+            "level": 3,
+            "line_coordinates": [
+                {
+                    "lat": -33.436041,
+                    "lon": -70.650017
+                },
+                {
+                    "lat": -33.436208,
+                    "lon": -70.651451
+                },
+                {
+                    "lat": -33.436363,
+                    "lon": -70.652767
+                },
+                {
+                    "lat": -33.436514,
+                    "lon": -70.654149
+                },
+                {
+                    "lat": -33.436669,
+                    "lon": -70.655667
+                }
+            ],
+            "publish_datetime_utc": "2023-11-30T00:53:25.104Z",
+            "severity": 5,
+            "speed_kmh": 11.79,
+            "start_location": null,
+            "street": "Santo Domingo",
+            "type": "NONE",
+            "update_datetime_utc": "2023-11-30T00:57:34.463Z"
+        }
+    ]
+}
